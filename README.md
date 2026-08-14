@@ -1,10 +1,10 @@
-# 🚀 KubeRescue — Kubernetes Autonomous Self-Healing & Fault Recovery Platform
+# KubeRescue — Kubernetes Autonomous Self-Healing & Fault Recovery Platform
 
 KubeRescue is a Kubernetes-based **self-healing and fault-recovery platform** designed to demonstrate how Kubernetes can automatically detect failures, maintain application availability, recover workloads, preserve persistent data, and safely recover from failed deployments.
 
 The project intentionally introduces different failure scenarios and validates Kubernetes-native recovery mechanisms such as **Deployments, ReplicaSets, Liveness Probes, Readiness Probes, HPA, PDB, PV/PVC, ConfigMaps, Secrets, NetworkPolicies, Rolling Updates, Rollbacks, Node Affinity, Taints, and Tolerations**.
 
-## 📌 Project Overview
+## Project Overview
 
 In a production Kubernetes environment, applications can fail because of:
 
@@ -52,7 +52,7 @@ KubeRescue simulates these situations and demonstrates how Kubernetes responds a
                            │
                     Kubernetes Recovery
 
-# 🎯 Project Objectives
+# Project Objectives
 
 The main objectives of KubeRescue are:
 
@@ -68,7 +68,7 @@ The main objectives of KubeRescue are:
 * Demonstrate automatic scaling using HPA.
 * Document and reproduce real Kubernetes failure scenarios.
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 | Technology                | Purpose                         |
 | ------------------------- | ------------------------------- |
@@ -102,7 +102,7 @@ The main objectives of KubeRescue are:
 * Rolling Updates
 * Rollbacks
 
-# 🏗️ Architecture
+# Architecture
 
                          KUBERESCUE
                              │
@@ -144,7 +144,7 @@ The main objectives of KubeRescue are:
                              │
                         PDB / Availability
 
-# 📁 Project Structure
+# Project Structure
 
 kubernetes-kuberescue/
 │
