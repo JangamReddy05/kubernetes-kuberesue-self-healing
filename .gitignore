@@ -1,0 +1,113 @@
+# KubeRescue - Kubernetes Self-Healing & Fault Recovery Project
+
+# Operating System Files
+
+# Windows
+
+Thumbs.db
+Desktop.ini
+
+# macOS
+
+.DS_Store
+
+# Linux temporary files
+
+*~
+
+# IDE / Editor Files
+
+
+.vscode/
+.idea/
+
+# Editor temporary files
+
+*.swp
+*.swo
+*.tmp
+*.bak
+
+
+# Kubernetes Local Files
+
+# Local kubeconfig files
+
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+# Kubernetes temporary/generated files
+
+*.yaml.tmp
+*.yml.tmp
+
+# kubectl command output
+
+kubectl-output.txt
+kubectl-output.log
+
+# Local Kubernetes cluster directories
+
+.minikube/
+.kind/
+.k3d/
+
+# Kubernetes Secrets / Credentials
+
+# Environment files
+
+.env
+.env.*
+
+# Local secret files
+
+*.secret
+*.secrets
+
+# Private keys / certificates
+
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Cloud/service credentials
+
+credentials.json
+service-account.json
+
+# ------------------------------------------------------------
+
+# Logs
+
+
+*.log
+logs/
+
+
+# Temporary Files
+
+
+tmp/
+temp/
+.cache/
+
+*.zip
+*.tar
+*.tar.gz
+
+# Local Notes
+
+
+local-notes.md
+personal-notes.md
+notes.txt
+
+
+# Backup Files
+
+
+*.old
+*.orig
+*.backup
