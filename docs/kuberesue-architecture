@@ -1,0 +1,30 @@
+                 ┌──────────────────┐
+                 │ Kubernetes       │
+                 │ Cluster          │
+                 └────────┬─────────┘
+                          │
+                       Ingress
+                          │
+                       Service
+                          │
+              ┌───────────┼───────────┐
+              │           │           │
+             Pod         Pod         Pod
+              │           │           │
+              └───────────┼───────────┘
+                          │
+                 ┌────────▼────────┐
+                 │ Health Probes   │
+                 └────────┬────────┘
+                          │
+          ┌───────────────┼────────────────┐
+          │               │                │
+       Storage         Security        Scheduling
+          │               │                │
+        PV/PVC      Secret/Network     Affinity/Taint
+                          │
+                    Recovery Layer
+                          │
+        ┌─────────────────┼────────────────┐
+        │                 │                │
+   Pod Recovery       Rollback           HPA

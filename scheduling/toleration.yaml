@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: toleration-demo
+  namespace: kuberesue
+  labels:
+    app: toleration-demo
+
+spec:
+  nodeSelector:
+    workload: scheduled
+
+  tolerations:
+    - key: dedicated
+      operator: Equal
+      value: special
+      effect: NoSchedule
+
+  containers:
+    - name: nginx
+      image: nginx:latest
+      ports:
+        - containerPort: 80

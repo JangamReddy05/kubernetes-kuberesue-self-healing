@@ -158,9 +158,6 @@ kubernetes-kuberescue/
 │   ├── service.yaml
 │   └── configmap.yaml
 │
-├── health-checks/
-│   ├── liveness.yaml
-│   └── readiness.yaml
 │
 ├── resources/
 │   ├── resource-limits.yaml
@@ -183,9 +180,6 @@ kubernetes-kuberescue/
 ├── availability/
 │   └── pdb.yaml
 │
-├── rolling-updates/
-│   ├── deployment-v1.yaml
-│   └── deployment-v2.yaml
 │
 ├── failure-tests/
 │   ├── 01-pod-failure.md

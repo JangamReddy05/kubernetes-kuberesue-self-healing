@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuberesue-storage-app
+  namespace: kuberesue
+  labels:
+    app: kuberesue-storage-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: kuberesue-storage-app
+
+  template:
+    metadata:
+      labels:
+        app: kuberesue-storage-app
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+
+          ports:
+            - containerPort: 80
+
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: /usr/share/nginx/html
+
+      volumes:
+        - name: persistent-storage
+          persistentVolumeClaim:
+            claimName: kuberesue-pvc
